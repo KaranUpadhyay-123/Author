@@ -1,10 +1,109 @@
-<section class="register">
-    <h2>Register</h2>
-    <form>
-      <input type="text" placeholder="Full Name">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <button type="submit">Sign Up</button>
-    </form>
-  </section>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Technical Conference Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#author-registration">Author Registration</a></li>
+                <li><a href="#paper-submission">Paper Submission</a></li>
+                <li><a href="#reviewer-registration">Reviewer Registration</a></li>
+                <li><a href="#conference-registration">Conference Registration</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="author-registration">
+        <h2>Author Registration</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" required>
+
+            <label>Email ID:</label>
+            <input type="email" required>
+
+            <label>Phone Number:</label>
+            <input type="text" required>
+
+            <label>Affiliation:</label>
+            <select required>
+                <option value="">Select...</option>
+                <option value="university">University</option>
+                <option value="organization">Organization</option>
+            </select>
+
+            <label>Password:</label>
+            <input type="password" required>
+
+            <label>Confirm Password:</label>
+            <input type="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="paper-submission">
+        <h2>Paper Submission</h2>
+        <form>
+            <label>Paper Title:</label>
+            <input type="text" required>
+
+            <label>Abstract:</label>
+            <textarea required></textarea>
+
+            <label>Upload Paper (PDF/DOC):</label>
+            <input type="file" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="conference-registration">
+        <h2>Conference Registration</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" required>
+
+            <label>Email ID:</label>
+            <input type="email" required>
+
+            <label>Select Ticket Type:</label>
+            <select required>
+                <option value="">Select...</option>
+                <option value="general">General</option>
+                <option value="student">Student</option>
+                <option value="speaker">Speaker</option>
+            </select>
+
+            <label>Payment Method:</label>
+            <select required>
+                <option value="credit">Credit</option>
+                <option value="debit">Debit</option>
+                <option value="upi">UPI</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form>
+            <label>Email ID:</label>
+            <input type="email" required>
+
+            <label>Password:</label>
+            <input type="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>
